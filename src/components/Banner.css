@@ -1,0 +1,28 @@
+.banner {  
+    min-height: 140px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .banner img {
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+
+}
+  
+  .banner h1 {
+    font-weight: 500;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  
