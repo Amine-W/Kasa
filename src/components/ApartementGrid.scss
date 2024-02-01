@@ -1,6 +1,8 @@
+@use "../scss/variables.scss" as *;
+
 .grid{
     min-height: 50vh;
-    background-color: #F6F6F6;
+    background-color: $grid-background-dark;
     border-radius: 2rem;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +16,7 @@
 
     .grid{
         justify-content: center;
-        background-color: white;
+        background-color: $grid-background-light;
         padding: 0;
     }
     

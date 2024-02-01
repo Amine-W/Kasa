@@ -1,3 +1,5 @@
+@use "../scss/variables.scss" as *;
+
 .banner {  
     min-height: 140px;
     margin: auto;
@@ -21,7 +23,7 @@
   
   .banner h1 {
     font-weight: 500;
-    color: white;
+    color: $color-tercery;
     position: relative;
     z-index: 1;
   }
