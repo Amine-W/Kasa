@@ -1,28 +1,10 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import Navbar from  './components/Navbar';
-import './index.scss'
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
 
-const router=createBrowserRouter([
-  {
-    path:"/",
-    element:<App />,
-    errorElement: <h1>404 not found</h1>
-  },
-  {
-    path:"/flat",
-    element: <Navbar />, 
-  },
-  {
-    path:"/about",
-    element: <Navbar />,
-  },
-]);
-
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
